@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ibrahim Ali">
+    <meta name="description" content="Ibrahim Ali's Official Portfolio - Full Stack Developer, Digital Marketing Specialist, and Designer.">
+    <meta name="keywords" content="Ibrahim Ali, web developer, full stack developer, digital marketing, SEO, web design, portfolio, programmer, freelancer">
+
+    <meta property="og:title" content="Ibrahim Ali Portfolio | Web Developer & Digital Marketing Specialist">
+    <meta property="og:description" content="Explore Ibrahim Ali's projects, full-stack web development, and digital marketing skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_PORTFOLIO_URL_HERE">
+    <meta property="og:image" content="YOUR_PORTFOLIO_URL_HERE/images/og-image.jpg">
+    <meta property="og:image:alt" content="Ibrahim Ali Portfolio Image">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+    <meta name="twitter:creator" content="@yourtwitterhandle">
+    <meta name="twitter:title" content="Ibrahim Ali Portfolio | Web Developer & Digital Marketing Specialist">
+    <meta name="twitter:description" content="Explore Ibrahim Ali's projects, full-stack web development, and digital marketing skills.">
+    <meta name="twitter:image" content="YOUR_PORTFOLIO_URL_HERE/images/twitter-card.jpg">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3498db">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Ibrahim Portfolio">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <title>Ibrahim Ali Portfolio | Web Developer & Digital Marketing Specialist</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+    <div class="scroll-progress-container">
+        <div id="scroll-indicator" class="scroll-progress-bar"></div>
+    </div>
+<div id="loading-screen" class="preloader">
+    <div class="loading-text" id="name-loader">
+        <span>I</span>
+         <span class="word-spacer"> </span>
+        <span>B</span>
+         <span class="word-spacer"> </span>
+        <span>R</span>
+         <span class="word-spacer"> </span>
+        <span>A</span>
+         <span class="word-spacer"> </span>
+        <span>H</span>
+         <span class="word-spacer"> </span>
+        <span>I</span>
+         <span class="word-spacer"> </span>
+        <span>M</span>
+        <span class="word-spacer"> </span> <span>A</span>
+        <span>L</span>
+         <span class="word-spacer"> </span>
+        <span>I</span>
+    </div>
+</div>
+
+    <div class="language-switcher">
+        <button id="lang-toggle" class="lang-toggle">
+            <span class="lang-en active" data-lang="en">EN</span>
+            <span class="lang-separator">|</span>
+            <span class="lang-ar" data-lang="ar">عربي</span>
+        </button>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Ibrahim Ali</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#about" data-en="About" data-ar="عني">About</a></li>
+                <li><a href="#journey" data-en="Journey" data-ar="رحلتي">Journey</a></li>
+                <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                <li><a href="#github-activity" data-en="GitHub" data-ar="GitHub">GitHub</a></li>
+
+                <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle Mobile Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+            <li><a href="#about" data-en="About" data-ar="عني">About</a></li>
+            <li><a href="#journey" data-en="Journey" data-ar="رحلتي">Journey</a></li>
+            <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
+            <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+            <li><a href="#github-activity" data-en="GitHub" data-ar="GitHub">GitHub</a></li>
+            <li><a href="#blog" data-en="Blog" data-ar="المدونة">Blog</a></li>
+            <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+        </ul>
+    </div>
+
+<section id="home" class="hero-section reveal-section">
+    <div id="particles-hero" class="particles-background"></div>
+    <div class="container hero-container">
+        <div class="hero-content lang-en-content active">
+            <h1 class="hero-title">
+                <span class="hi-text">Hi, I'm</span>
+                <span class="name-part">Ibrahim</span> <span class="name-part name-ali">Ali</span>
+            </h1>
+            <h2 id="typed-text-en" class="hero-subtitle"></h2>
+            <p class="hero-description">I'm a full-stack web developer and digital marketing specialist, passionate about building impactful digital experiences and driving growth through innovative strategies.</p>
+            <div class="hero-action-buttons">
+                <a href="#contact" class="btn secondary-btn">Hire Me</a>
+                <a href="#projects" class="btn secondary-btn">View My Work</a>
+            </div>
+            <div class="hero-social-links social-icons-list">
+                <div class="icon-content">
+                    <a href="https://github.com/Ibrahim3li" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span class="filled"></span>
+                    </a>
+                    <span class="tooltip">GitHub</span>
+                </div>
+                <div class="icon-content">
+                    <a href="https://linkedin.com/in/ibrahim3li" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="filled"></span>
+                    </a>
+                    <span class="tooltip">LinkedIn</span>
+                </div>
+          
+                   
+            </div>
+        </div>
+
+        <div class="hero-content lang-ar-content">
+            <h1 class="hero-title" dir="rtl">
+                <span class="hi-text">مرحباً، أنا</span>
+                <span class="name-part">إبراهيم</span> <span class="name-part name-ali">علي</span>
+            </h1>
+            <h2 id="typed-text-ar" class="hero-subtitle"></h2>
+            <p class="hero-description">أنا مطور ويب شامل و متخصص في التسويق الرقمي، شغوف ببناء تجارب رقمية مؤثرة وقيادة النمو عبر استراتيجيات مبتكرة.</p>
+            <div class="hero-action-buttons">
+                <a href="#contact" class="btn primary-btn">توظيفني</a>
+                <a href="#projects" class="btn secondary-btn">شاهد مشاريعي</a>
+            </div>
+            <div class="hero-social-links social-icons-list">
+                <div class="icon-content">
+                    <a href="https://github.com/Ibrahim3li" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span class="filled"></span>
+                    </a>
+                    <span class="tooltip">GitHub</span>
+                </div>
+                <div class="icon-content">
+                    <a href="https://linkedin.com/in/ibrahim3li" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="filled"></span>
+                    </a>
+                    <span class="tooltip">LinkedIn</span>
+                </div>
+                
+    </div>
+</section>
+
+    <section id="about" class="about-section reveal-section">
+        <div class="container">
+            <div class="lang-en-content active">
+                <h2 class="section-title">Who I Am</h2>
+                <p class="section-description">A full-stack web developer and digital marketer with over 5 years of experience in building effective digital solutions.</p>
+                <div class="about-content">
+                    <div class="about-image grayscale-hover">
+                        <img src="images/cv-pic.jpeg" alt="Ibrahim Ali's Photo">
+                    </div>
+                    <div class="about-text">
+                        <p>My name is Ibrahim Ali, and I am passionate about transforming complex ideas into engaging and effective digital experiences. As a full-stack web developer, I have the ability to handle both front-end and back-end development, building powerful and user-friendly web applications.</p>
+                        <p>In addition, I have deep expertise in digital marketing, which allows me to understand not only how to build products, but also how to successfully market them and reach the target audience effectively through SEO, SEM, and advertising campaign management strategies.</p>
+                        <p>I believe that technology and marketing are two sides of the same coin when it comes to digital growth. My goal is to help companies and individuals achieve their digital objectives through integrated solutions that combine innovative design, strong performance, and marketing insight.</p>
+                       <div class="flex-center mt-8">
+    <button class="download-resume-btn" id="downloadCvBtn">
+        <span class="btn-text">Download CV</span>
+        <div class="btn-icon-wrapper">
+            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 5v14"></path>
+                <path d="M18 13l-6 6l-6 -6"></path>
+            </svg>
+            <svg class="icon-spinner" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 3a9 9 0 1 0 9 9"></path>
+            </svg>
+        </div>
+    </button>
+</div>
+
+            <div class="lang-ar-content">
+                <h2 class="section-title">من أنا</h2>
+                <p class="section-description">مطور ويب شامل ومسوق رقمي بخبرة تزيد عن 5 سنوات في بناء حلول رقمية فعالة.</p>
+                <div class="about-content">
+                    <div class="about-image grayscale-hover">
+                        <img src="images/ibrahim-profile.jpg" alt="صورة إبراهيم علي">
+                    </div>
+                    <div class="about-text">
+                        <p>اسمي إبراهيم علي، وأنا شغوف بتحويل الأفكار المعقدة إلى تجارب رقمية جذابة وفعالة. كوني مطور ويب شامل، أمتلك القدرة على التعامل مع الواجهة الأمامية والخلفية، وبناء تطبيقات ويب قوية وسهلة الاستخدام.</p>
+                        <p>بالإضافة إلى ذلك، لدي خبرة عميقة في التسويق الرقمي، مما يمكنني من فهم ليس فقط كيفية بناء المنتجات، ولكن أيضاً كيفية تسويقها بنجاح والوصول إلى الجمهور المستهدف بفعالية من خلال استراتيجيات SEO، SEM، وإدارة الحملات الإعلانية.</p>
+                        <p>أؤمن بأن التقنية والتسويق هما وجهان لعملة واحدة عندما يتعلق الأمر بالنمو الرقمي. هدفي هو مساعدة الشركات والأفراد على تحقيق أهدافهم الرقمية من خلال حلول متكاملة تجمع بين التصميم المبتكر، الأداء القوي، والرؤية التسويقية.</p>
+                        <div class="flex-center mt-8">
+                            <label class="download-resume-btn">
+                                <input type="checkbox" class="download-input" onclick="window.open('your-cv-file.pdf', '_blank')">
+                                <div class="download-container">
+                                    <div class="download-label">
+                                        <div class="download-circle">
+                                            <div class="download-icon">
+                                                <div class="download-square"></div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 4v16a8 8 0 0 0 0 -16z"></path>
+                                                    <path d="M12 4v16"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="download-title">تنزيل سيرتي الذاتية</div>
+                                        <div class="download-title">افتح</div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 data-en="5+" data-ar="5+">5+</h3>
+                    <p data-en="Years Experience" data-ar="سنوات خبرة">Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-en="30+" data-ar="30+">30+</h3>
+                    <p data-en="Projects Completed" data-ar="مشروع مكتمل">Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-en="15+" data-ar="15+">15+</h3>
+                    <p data-en="Happy Clients" data-ar="عميل سعيد">Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-en="95%" data-ar="95%">95%</h3>
+                    <p data-en="Client Satisfaction" data-ar="رضا العملاء">Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="journey-section reveal-section">
+        <div class="container">
+            <div class="lang-en-content active">
+                <h2 class="section-title">My Journey</h2>
+                <p class="section-description">Explore my educational and professional path that shaped my expertise.</p>
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item timeline-left reveal-section">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor's Degree in Accounting</h3>
+                            <span class="timeline-date">Alexandria University</span>
+                            <p>Acquired a solid understanding of financial principles, accounting standards, and auditing procedures.
+</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item timeline-right reveal-section">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Digital Marketing Specialist</h3>
+                            <span class="timeline-date">mindiv Marketing Company</span>
+                            <p>Developed and implemented comprehensive digital marketing strategies, managed advertising campaigns across multiple platforms, and analyzed performance data.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item timeline-left reveal-section">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Full Stack Web Developer</h3>
+                            <span class="timeline-date">Freelancer</span>
+                            <p>Building and developing robust web applications using the latest technologies in front-end and back-end, focusing on performance and user-friendliness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lang-ar-content">
+                <h2 class="section-title">رحلتي</h2>
+                <p class="section-description">استكشف مساري التعليمي والمهني الذي شكل خبراتي.</p>
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item timeline-right reveal-section">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>شهادة بكالوريوس في المحاسبة</h3>
+                            <span class="timeline-date">جامعة الإسكندرية </span>
+                            <p>اكتسبت فهما قويا للمبادئ المالية ومعايير المحاسبة وإجراءات التدقيق.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item timeline-left reveal-section">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>متخصص تسويق رقمي</h3>
+                            <span class="timeline-date">شركة Mindiv للتسويق </span>
+                            <p>قمت بتطوير وتنفيذ استراتيجيات تسويق رقمي شاملة، وإدارة حملات إعلانية على منصات متعددة، وتحليل بيانات الأداء.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item timeline-right reveal-section">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>مطور ويب شامل</h3>
+                            <span class="timeline-date">عمل حر</span>
+                            <p>أقوم ببناء وتطوير تطبيقات ويب قوية باستخدام أحدث التقنيات في الواجهة الأمامية والخلفية، مع التركيز على الأداء وسهولة الاستخدام.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section reveal-section">
+        <div class="container">
+            <div class="lang-en-content active">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-description">My technical and technological skill set.</p>
+
+                <div class="skills-category-wrapper reveal-section">
+                    <div class="category-label-col">
+                        <h3 class="category-label">Frontend</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-react-plain colored"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-vuejs-plain colored"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-bootstrap-plain colored"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-tailwindcss-plain colored"></i>
+                            <span>TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category-wrapper reveal-section">
+                    <div class="category-label-col">
+                        <h3 class="category-label">Backend</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-php-plain colored"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-express-original-wordmark"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-nextjs-original-wordmark"></i>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category-wrapper reveal-section">
+                    <div class="category-label-col">
+                        <h3 class="category-label">Databases</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category-wrapper reveal-section">
+                    <div class="category-label-col">
+                        <h3 class="category-label">Tools & Others</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-github-original colored"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-amazonwebservices-plain colored"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-googlecloud-plain colored"></i>
+                            <span>Google Cloud</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-wordpress-plain colored"></i>
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lang-ar-content">
+                <h2 class="section-title">المهارات</h2>
+                <p class="section-description">مجموعة مهاراتي الفنية والتقنية التي أمتلكها.</p>
+
+                <div class="skills-category-wrapper reveal-section">
+                    <div class="category-label-col">
+                        <h3 class="category-label">الواجهة الأمامية</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-react-plain colored"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-vuejs-plain colored"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-bootstrap-plain colored"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-tailwindcss-plain colored"></i>
+                            <span>TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category-wrapper reveal-section">
+                    <div class="category-label-col">
+                        <h3 class="category-label">الواجهة الخلفية</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-php-plain colored"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-express-original-wordmark"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-nextjs-original-wordmark"></i>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category-wrapper reveal-section">
+                    <div class="category-label-col">
+                        <h3 class="category-label">قواعد البيانات</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category-wrapper reveal-section">
+                    <div class="category-label-col">
+                        <h3 class="category-label">أدوات وأخرى</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-github-original colored"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-amazonwebservices-plain colored"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-googlecloud-plain colored"></i>
+                            <span>Google Cloud</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-wordpress-plain colored"></i>
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="projects" class="projects-section reveal-section py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Featured Projects</h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-600">Here are some of my recent projects that showcase my skills and expertise.</p>
+        </div>
+
+        <!-- Grid container for projects -->
+        <div class="projects-grid" id="projects-container-en">
+            <!-- Project 1 -->
+            <div class="project-card group">
+                <img src="images/luxor-logo.jpg" alt="Luxor Premium Coffee">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Luxor Premium Coffee</h3>
+                    <p class="text-gray-300 mb-4">A premium coffee brand with elegant website showcasing company values and unique offerings.</p>
+                    <a href="https://luxorpremiumcoffee.com/" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card group">
+                <img src="images/worldholiday-logo.png" alt="World Holidays 4U">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">World Holidays 4U</h3>
+                    <p class="text-gray-300 mb-4">Travel agency website offering vacation packages worldwide with booking system.</p>
+                    <a href="https://worldholidays4u.com/" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card group">
+                <img src="images/astika-logo.png" alt="Astika Stationary">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Astika Stationary</h3>
+                    <p class="text-gray-300 mb-4">Alexandria-based stationery store offering office supplies, art materials, and books.</p>
+                    <a href="https://www.facebook.com/Astikagallery/" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card group">
+                <img src="images/elbaraka-logo.png" alt="Al Baraka Ihram Clothing">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Al Baraka Ihram Clothing</h3>
+                    <p class="text-gray-300 mb-4">Facebook page marketing Ihram clothing with logo design and ad campaigns.</p>
+                    <a href="https://www.facebook.com/ElBaraka.hjjandumrasupplies" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card group">
+                <img src="images/smarthome-logo.png" alt="Smart Home Store">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Smart Home Store</h3>
+                    <p class="text-gray-300 mb-4">E-commerce platform for smart home devices with product configurator.</p>
+                    <a href="https://www.facebook.com/smarthome.electronic.store" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card group">
+                <img src="images/masar-logo.jpg" alt="Masar Modern Company">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Masar Modern Company</h3>
+                    <p class="text-gray-300 mb-4">Facebook page and website showcasing portfolio and services.</p>
+                    <a href="https://www.facebook.com/profile.php?id=61573157398278" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card group">
+                <img src="images/codexai-logo.png" alt="Codex AI">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Codex AI</h3>
+                    <p class="text-gray-300 mb-4">Facebook, Instagram, TikTok, and YouTube pages highlighting AI solutions.</p>
+                    <a href="https://www.facebook.com/codexaiagency" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card group">
+                <img src="images/MotivationNexusHub-logo.jpg" alt="Motivation Nexus Hub">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Motivation Nexus Hub</h3>
+                    <p class="text-gray-300 mb-4">Facebook, Instagram and YouTube pages dedicated to inspiring individuals.</p>
+                    <a href="https://www.facebook.com/profile.php?id=61565461185601" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card group">
+                <img src="images/mealplanner.png" alt="Meal Planner">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Meal Planner</h3>
+                    <p class="text-gray-300 mb-4">Website that helps users plan meals and track nutrition goals.</p>
+                    <a href="#" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card group">
+                <img src="images/puppy'spicks-logo.png" alt="Puppy's Picks">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Puppy's Picks</h3>
+                    <p class="text-gray-300 mb-4">Store dedicated to providing pet owners with high-quality products.</p>
+                    <a href="https://puppyspicks.com/" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card group">
+                <img src="images/athena-logo.png" alt="Athena Café">
+                <div class="project-overlay">
+                    <h3 class="text-xl font-bold mb-2">Athena Café</h3>
+                    <p class="text-gray-300 mb-4">Cozy café in Alexandria with Facebook page and distinctive logo design.</p>
+                    <a href="https://www.facebook.com/athenacoffeeshop" target="_blank" class="text-white hover:text-primary font-medium mt-4 inline-block">View Project →</a>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+</section>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const viewAllProjectsEnBtn = document.getElementById('view-all-projects-en');
+        const viewAllProjectsArBtn = document.getElementById('view-all-projects-ar');
+        const projectsContainerEn = document.getElementById('projects-container-en');
+        const projectsContainerAr = document.getElementById('projects-container-ar');
+
+        // Function to toggle "show-all" class
+        function toggleProjects(container, button) {
+            container.classList.toggle('show-all');
+            if (container.classList.contains('show-all')) {
+                button.textContent = button.id.includes('-en') ? 'View Less Projects' : 'عرض مشاريع أقل';
+            } else {
+                button.textContent = button.id.includes('-en') ? 'View All Projects' : 'عرض جميع المشاريع';
+            }
+        }
+
+        if (viewAllProjectsEnBtn && projectsContainerEn) {
+            viewAllProjectsEnBtn.addEventListener('click', function() {
+                toggleProjects(projectsContainerEn, viewAllProjectsEnBtn);
+            });
+        }
+
+        if (viewAllProjectsArBtn && projectsContainerAr) {
+            viewAllProjectsArBtn.addEventListener('click', function() {
+                toggleProjects(projectsContainerAr, viewAllProjectsArBtn);
+            });
+        }
+    });
+</script>
+
+    <section id="github-activity" class="github-activity-section reveal-section">
+        <div class="container">
+            <div class="lang-en-content active">
+                <h2 class="section-title">My GitHub Activity</h2>
+                <p class="section-description">A quick look at my recent contributions and activities in the programming world.</p>
+
+                <div class="github-stats-grid">
+                    <div class="github-stat-card">
+                        <div class="stat-value" id="githubRepos-en">--</div>
+                        <div class="stat-label">Public Repos</div>
+                    </div>
+                    <div class="github-stat-card">
+                        <div class="stat-value" id="githubStars-en">--</div>
+                        <div class="stat-label">Total Stars</div>
+                    </div>
+                    <div class="github-stat-card">
+                        <div class="stat-value" id="githubFollowers-en">--</div>
+                        <div class="stat-label">Followers</div>
+                    </div>
+                    <div class="github-stat-card">
+                        <div class="stat-value" id="githubCommits-en">--</div>
+                        <div class="stat-label">Total Commits (approx.)</div>
+                    </div>
+                </div>
+
+                <div class="github-activity-feed-card">
+                    <div class="feed-header">
+                        <h3 class="feed-title">Recent Activity</h3>
+                        <a href="https://github.com/Ibrahim3li" target="_blank" class="view-profile-link">
+                            View Profile <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="activity-items-list" id="githubActivity-en">
+                        <div class="loading-placeholder">
+                            <div class="spinner"></div>
+                            <p class="loading-text">Loading GitHub activity...</p>
+                        </div>
+                    </div>
+                </div>
+
+            
+            <div class="lang-ar-content">
+                <h2 class="section-title">نشاطي على GitHub</h2>
+                <p class="section-description">نظرة سريعة على مساهماتي وأنشطتي الأخيرة في عالم البرمجة.</p>
+
+                <div class="github-stats-grid">
+                    <div class="github-stat-card">
+                        <div class="stat-value" id="githubRepos-ar">--</div>
+                        <div class="stat-label">المستودعات العامة</div>
+                    </div>
+                    <div class="github-stat-card">
+                        <div class="stat-value" id="githubStars-ar">--</div>
+                        <div class="stat-label">إجمالي النجوم</div>
+                    </div>
+                    <div class="github-stat-card">
+                        <div class="stat-value" id="githubFollowers-ar">--</div>
+                        <div class="stat-label">المتابعون</div>
+                    </div>
+                    <div class="github-stat-card">
+                        <div class="stat-value" id="githubCommits-ar">--</div>
+                        <div class="stat-label">إجمالي الالتزامات (تقريبي)</div>
+                    </div>
+                </div>
+
+                <div class="github-activity-feed-card">
+                    <div class="feed-header">
+                        <h3 class="feed-title">النشاط الأخير</h3>
+                        <a href="https://github.com/Ibrahim3li" target="_blank" class="view-profile-link">
+                            عرض ملفي الشخصي <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                    <div class="activity-items-list" id="githubActivity-ar">
+                        <div class="loading-placeholder">
+                            <div class="spinner"></div>
+                            <p class="loading-text">جاري تحميل نشاط GitHub...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-languages-section">
+                    <h2 class="section-title">اللغات الأكثر استخداماً</h2>
+                    <div class="languages-grid" id="githubLanguages-ar">
+                        <div class="loading-placeholder">
+                            <div class="spinner"></div>
+                            <p class="loading-text">جاري تحميل اللغات...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="contact" class="contact-section reveal-section">
+        <div class="container">
+            <div class="lang-en-content active">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-description">Feel free to contact me for any inquiries or projects.</p>
+
+        <div class="contact-info-grid">
+    <div class="contact-info-item">
+        <i class="fas fa-envelope"></i>
+        <h4>Email</h4>
+        <p><a href="mailto:ibrahim3li.9619@gmail.com" style="text-decoration: none; color: inherit;">ibrahim3li.9619@gmail.com</a></p>
+    </div>
+    <div class="contact-info-item">
+        <i class="fas fa-phone-alt"></i>
+        <h4>Phone</h4>
+        <p><a href="tel:+201030161483" style="text-decoration: none; color: inherit;">+20 103 016 1483</a></p>
+    </div>
+    <div class="contact-info-item">
+        <i class="fab fa-whatsapp"></i> <h4>WhatsApp</h4>
+        <p>
+            <a href="https://wa.me/201030161483" target="_blank" style="text-decoration: none; color: inherit;">
+                +20 103 016 1483
+            </a>
+        </p>
+    </div>
+    <div class="contact-info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <h4>Location</h4>
+        <p>Alexandria, Egypt</p>
+    </div>
+</div>
+
+                <h3 class="section-subtitle">Or find me on:</h3>
+                <div class="social-links-contact-section">
+                    <a href="https://github.com/Ibrahim3li" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ibrahim3li" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <form class="contact-form" action="YOUR_FORM_SUBMISSION_URL_HERE" method="POST">
+                    <input type="text" name="name" placeholder="Your Full Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="lang-ar-content">
+                <h2 class="section-title">تواصل معي</h2>
+                <p class="section-description">لا تتردد في التواصل معي لأي استفسارات أو مشاريع.</p>
+
+                <div class="contact-info-grid">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>البريد الإلكتروني</h4>
+                        <p>info@ibrahimali.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>الهاتف</h4>
+                        <p>+20 123 456 7890</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>الموقع</h4>
+                        <p>الإسكندرية، مصر</p>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">أو تجدني على:</h3>
+                <div class="social-links-contact-section">
+                    <a href="https://github.com/Ibrahim3li" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ibrahim3li" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/ibrahim3li_" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/ibrahim3li_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <form class="contact-form" action="YOUR_FORM_SUBMISSION_URL_HERE" method="POST">
+                    <input type="text" name="name" placeholder="اسمك الكامل" required>
+                    <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+                    <input type="text" name="subject" placeholder="الموضوع" required>
+                    <textarea name="message" placeholder="رسالتك" required></textarea>
+                    <button type="submit" class="btn primary-btn">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="lang-en-content active">
+                <p>&copy; Ibrahim Ali. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="lang-ar-content">
+                <p>&copy; <span id="current-year-ar"></span> إبراهيم علي. جميع الحقوق محفوظة.</p>
+                <div class="footer-links">
+                    <a href="#home">الرئيسية</a>
+                    <a href="#about">عني</a>
+                    <a href="#contact">تواصل</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/particles.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
